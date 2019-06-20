@@ -1,0 +1,49 @@
+.contact-section{
+    text-align: center;
+    padding-top: 4rem;
+    & input{
+        width: 100%;
+        margin: 10px 0;
+        background: rgba(0,0,0,0);
+        border: none;
+        border-bottom: 2px solid $primary-color;
+        outline: none;
+        &:focus{
+            outline: none;
+            border-color: #c52e37;
+        }
+    }
+
+    & textarea{
+        border: 2px solid $primary-color;
+        width: 100%;
+        min-height: 10rem;
+        resize: vertical;
+        overflow: hidden;
+        margin-top: 1.5rem;
+        &:focus{
+            outline: none;
+            border-color: #c52e37;
+        }
+    }
+
+    .send-button{
+        padding: 0.5rem;
+        font-size: 1.2rem;
+        border: 2px solid $primary-color;
+        &::active{
+            outline: none;
+        }
+        &::focus{
+            background: #c52e37;
+        }
+        &::hover{
+            @include shine;
+            background: #c52e37;
+        }
+    }
+}
+
+::-webkit-input-placeholder{
+    color: $primary-color;
+}

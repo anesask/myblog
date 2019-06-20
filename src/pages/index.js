@@ -1,15 +1,19 @@
 import React from 'react'
-import { Link } from 'gatsby'
-
 import Layout from '../components/layout'
+import Fronttext from '../images/frontpage_text.svg'
+// import Menu from '../components/menu'
 
 const IndexPage = () => (
-  <Layout>
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <Link to="/page-2/">Go to page 2</Link>
-  </Layout>
+    
+    <div className="inner-wrapper">
+      <Layout>  
+        <div className="fronttext-img"><img src={Fronttext} alt="I'm Anes"/>
+            <h1>Human being & Web Developer</h1>
+        </div>
+      </Layout>
+    </div>
+  
+
 )
 
 export default IndexPage

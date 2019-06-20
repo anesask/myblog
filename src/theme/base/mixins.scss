@@ -1,0 +1,55 @@
+@mixin scroll{
+    opacity: 0.95;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05), 0 6px 6px rgba(0,0,0,0.05);
+    transition: all 0.5s ease;   
+}
+
+@mixin shine{
+    mask-image: linear-gradient(-75deg, rgba(0,0,0,.6) 30%, #000 50%, rgba(0,0,0,.6) 70%);
+    mask-size: 200%;
+      -webkit-mask-image: linear-gradient(-75deg, rgba(0,0,0,.6) 30%, #000 50%, rgba(0,0,0,.6) 70%);      
+      -webkit-mask-size: 200%;
+
+    animation: shine 2.5s infinite;
+
+    // Shine Keyframes
+    @keyframes shine {
+        from {
+            mask-position: 150%;
+        }
+        
+        to {
+            mask-position: -50%;
+        }
+    }
+
+    @-webkit-keyframes shine {
+        from {
+            -webkit-mask-position: 150%;
+        }
+        
+        to {
+            -webkit-mask-position: -50%;
+        }
+    }
+}
+
+// Media queries
+
+@mixin small-breakpoint{
+    @media (min-width: #{$mobile}){
+        @content;
+    }
+}
+
+@mixin medium-breakpoint{
+    @media (min-width: #{$tablet}){
+        @content;
+    }
+}
+
+@mixin large-breakpoint{
+    @media (min-width: #{$desktop}){
+        @content;
+    }
+}

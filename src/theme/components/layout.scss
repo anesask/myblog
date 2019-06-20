@@ -1,0 +1,14 @@
+.page-wrapper{
+    display: flex;
+    overflow: auto;
+    // resize: both;
+    align-items: center;
+    flex-direction: column;
+    min-height: calc(100vh-40px);    
+}
+.page-content{
+    // flex-grow: 1;
+    min-width: $min-width;
+    max-width: $max-width;
+    padding: $padding;
+}

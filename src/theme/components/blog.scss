@@ -1,0 +1,47 @@
+.article{
+    border-bottom: 1px solid black;
+    // border-radius: 5px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+    transition: all 0.1s ease;
+    // background-color: hsla(360, 50%, 90%, 0.77);
+
+    &:first-child{
+        margin-top: 2rem;
+    }
+
+    &:hover{
+        transform: scale(1.005);
+        transition: all 0.2s ease;
+    }
+
+    & a{
+        text-decoration: none;
+        text-transform: capitalize;
+        font-size: 24px;
+        font-weight: 500;
+        color: $primary-color;
+    }
+
+    & .article-title{
+        font-size: 1.5rem;
+        margin-bottom: 8px;
+    }
+
+    & .article-link{
+        text-decoration: none;
+    }
+
+    & p{
+        font-size: 18px;
+        margin-bottom: -0px;
+    }
+
+    & .article-date{
+        text-rendering: auto;
+        font-weight: bold;
+        text-decoration: black;
+    }
+}

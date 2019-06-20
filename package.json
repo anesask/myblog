@@ -4,13 +4,27 @@
   "version": "1.0.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
-    "gatsby": "^2.0.0",
-    "gatsby-plugin-manifest": "^2.0.2",
-    "gatsby-plugin-offline": "^2.0.5",
+    "gatsby": "^2.8.6",
+    "gatsby-background-image": "^0.7.0",
+    "gatsby-plugin-manifest": "^2.1.1",
+    "gatsby-plugin-offline": "^2.1.1",
     "gatsby-plugin-react-helmet": "^3.0.0",
+    "gatsby-plugin-sass": "^2.0.11",
+    "gatsby-plugin-sharp": "^2.1.3",
+    "gatsby-plugin-web-font-loader": "^1.0.4",
+    "gatsby-remark-embed-video": "^1.7.1",
+    "gatsby-remark-embed-youtube": "0.0.7",
+    "gatsby-remark-responsive-iframe": "^2.1.1",
+    "gatsby-source-filesystem": "^2.0.38",
+    "gatsby-transformer-remark": "^2.3.12",
+    "gatsby-transformer-sharp": "^2.1.21",
+    "node-sass": "^4.12.0",
     "react": "^16.5.1",
     "react-dom": "^16.5.1",
-    "react-helmet": "^5.2.0"
+    "react-helmet": "^5.2.1",
+    "react-icons": "^3.7.0",
+    "react-typography": "^0.16.19",
+    "resolve-url-loader": "^3.1.0"
   },
   "keywords": [
     "gatsby"
@@ -18,12 +32,14 @@
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",
-    "develop": "gatsby develop",
+    "develop": "env-cmd .env.development gatsby develop",
     "format": "prettier --write '**/*.js'",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
-    "prettier": "^1.14.2"
+    "env-cmd": "^8.0.2",
+    "prettier": "^1.18.2",
+    "typescript": "^3.5.1"
   },
   "repository": {
     "type": "git",
