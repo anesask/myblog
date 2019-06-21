@@ -14,11 +14,13 @@ const Contact = () => (
         method="post" 
         data-netlify="true"
         data-netlify-honeypot="bot-field">
-      
+
+        <input hidden name="bot-field" />
         <input type="text" name="name" id="name" placeholder="Name" />
         <input type="text" name="email" id="email" placeholder="Email"/>
         <input type="text" name="subject" id="subject" placeholder="Subject" />
         <textarea name="message" id="message" placeholder="Write your message..."/>
+        <div data-netlify-recaptcha />
         <input type="submit" value="Send Message" className="send-button"/>            
       </form>
     </div>
