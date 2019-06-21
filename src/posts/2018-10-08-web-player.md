@@ -1,6 +1,6 @@
 ---
 title: "Web Music Player - HTML/CSS/JS"
-date: "2019-10-08"
+date: "2018-10-08"
 ---
 
 Here is short preview on a small project I'm working on.

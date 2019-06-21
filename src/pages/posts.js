@@ -16,7 +16,7 @@ class Posts extends React.Component{
                   // <div className="blog-list"></div>
                     <article className="article" key={node.fields.slug}>
                         <h3 className="article-title">
-                            <Link className="article-link" to={node.fields.slug}>
+                            <Link to={node.fields.slug}>
                                 {node.frontmatter.title}
                             </Link>
                         </h3>
