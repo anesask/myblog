@@ -6,14 +6,17 @@ import Layout from '../components/layout'
 const Contact = () => (
   <Layout>
     <h1>Talk to Me</h1>
-    {/* <p>Feel free to talk about anything you want...</p> */}
+    <p>Feel free to talk about anything you want...</p>
     <div className="contact-section">
       <form
         className="contact-form" 
         name="contact"
         method="post" 
         data-netlify="true"
-        data-netlify-honeypot="bot-field">
+        data-netlify-honeypot="bot-field"
+        action="/success"
+        >
+        
 
         <input hidden name="bot-field" />
         <input type="hidden" name="form-name" value="contact" />

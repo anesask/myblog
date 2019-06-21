@@ -37,8 +37,7 @@
         &::focus{
             background: #c52e37;
         }
-        &::hover{
-            @include shine;
+        &::hover{            
             background: #c52e37;
         }
     }
@@ -46,4 +45,13 @@
 
 ::-webkit-input-placeholder{
     color: $primary-color;
+}
+
+.mail-icon{    
+    margin: 5rem auto;
+    text-align: center;
+    & img{
+        width: 40%;
+        height: auto;
+    }
 }

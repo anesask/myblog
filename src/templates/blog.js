@@ -13,7 +13,7 @@ class BlogPostTemplate extends React.Component{
                 <p>{post.frontmatter.date}</p>
                 <div dangerouslySetInnerHTML={{__html: post.html}}/>
                 <br/>
-                <Link to="/posts">Go back</Link>
+                <Link className="goback" to="/posts">&#8592; Go back</Link>
             </Layout>
         )
     }

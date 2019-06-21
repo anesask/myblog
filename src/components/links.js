@@ -25,7 +25,7 @@ const Links = () => {
           </li>
           {/* <li>
             <Link
-              to="/work"
+              to="/success"
               className="link-item"
               activeClassName="link-item--selected"
             >
