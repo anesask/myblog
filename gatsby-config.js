@@ -5,29 +5,7 @@ module.exports = {
   },
   plugins: [
     {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `src`,
-        path: `${__dirname}/src/`
-      }
-    },
-    {
-      resolve: 'gatsby-source-filesystem',
-      options: {
-        name: `images`,
-        path: `${__dirname}/src/images/`        
-      },
-    },
-    {
-      resolve: 'gatsby-plugin-web-font-loader',
-      options: {
-        google: {
-          families: ['Lato', 'Raleway']
-        }
-      }
-    },  
-    {
-      resolve: "gatsby-transformer-remark",
+      resolve: `gatsby-transformer-remark`,
       options: {
         plugins: [
         {
@@ -37,7 +15,7 @@ module.exports = {
         }
         },  
         {
-          resolve: "gatsby-remark-embed-video",
+          resolve: `gatsby-remark-embed-video`,
           options: {
             width: 800,
             ratio: 1.77, // Optional: Defaults to 16/9 = 1.77
@@ -48,11 +26,41 @@ module.exports = {
         }
         ]
       }
-    },  
-    `gatsby-remark-responsive-iframe`,
-    `gatsby-image`,
-    `gatsby-transformer-sharp`,
+    },
     `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,     
+    `gatsby-image`, 
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `src`,
+        path: `${__dirname}/src/`
+      }
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,        
+        path: `${__dirname}/src/images/`        
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {        
+        path: `${__dirname}/src/posts/`,
+        name: `posts`
+      },
+    },
+    {
+      resolve: `gatsby-plugin-web-font-loader`,
+      options: {
+        google: {
+          families: ['Lato', 'Raleway']
+        }
+      }
+    },  
+      
+    `gatsby-remark-responsive-iframe`,      
     `gatsby-plugin-react-helmet`,
     // // {
     // //   resolve: `gatsby-plugin-manifest`,

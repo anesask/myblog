@@ -21,7 +21,7 @@ class Posts extends React.Component{
                                 {node.frontmatter.title}
                             </Link>
                         </h3>
-                        <Img fluid={node.frontmatter.featuredImage.childImageSharp.fluid} /> /> 
+                        <Img sizes={node.frontmatter.featuredImage.childImageSharp.sizes} />
                         <small className="article-date">{node.frontmatter.date}</small>    
                         <p className="article-description" dangerouslySetInnerHTML={{__html: node.frontmatter.description || node.excerpt,}}></p>
                                                 
@@ -54,8 +54,8 @@ query {
             title
             featuredImage{
               childImageSharp{
-                fluid(maxWidth: 600){
-                  ...GatsbyImageSharpFluid
+                sizes(maxWidth: 630) {
+                  ...GatsbyImageSharpSizes
                 }
               }
             }
