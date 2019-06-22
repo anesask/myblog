@@ -31,6 +31,12 @@ module.exports = {
       options: {
         plugins: [
         {
+        resolve: `gatsby-remark-images`,
+        options: {
+          maxWidth: 590,
+        }
+        },  
+        {
           resolve: "gatsby-remark-embed-video",
           options: {
             width: 800,
@@ -38,14 +44,15 @@ module.exports = {
             height: 400, // Optional: Overrides optional.ratio
             related: false, //Optional: Will remove related videos from the end of an embedded YouTube video.
             noIframeBorder: true //Optional: Disable insertion of <style> border: 0
-          }
+          },
         }
         ]
       }
     },  
     `gatsby-remark-responsive-iframe`,
+    `gatsby-image`,
+    `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
-    `gatsby-transformer-sharp`, 
     `gatsby-plugin-react-helmet`,
     // // {
     // //   resolve: `gatsby-plugin-manifest`,

@@ -1,5 +1,6 @@
 import React from 'react'
 import { graphql, Link} from 'gatsby'
+import Img from 'gatsby-image'
 
 import Layout from '../components/layout'
 
@@ -20,6 +21,7 @@ class Posts extends React.Component{
                                 {node.frontmatter.title}
                             </Link>
                         </h3>
+                        <Img fluid={node.frontmatter.featuredImage.childImageSharp.fluid} /> /> 
                         <small className="article-date">{node.frontmatter.date}</small>    
                         <p className="article-description" dangerouslySetInnerHTML={{__html: node.frontmatter.description || node.excerpt,}}></p>
                                                 
@@ -50,6 +52,13 @@ query {
           frontmatter {
             date(formatString: "DD/MM/YYYY")
             title
+            featuredImage{
+              childImageSharp{
+                fluid(maxWidth: 600){
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
           }
         }
       }
