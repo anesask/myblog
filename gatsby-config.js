@@ -4,6 +4,7 @@ module.exports = {
     author: 'Anes Mulalic'
   },
   plugins: [
+    `gatsby-transformer-remark`,
     {
       resolve: `gatsby-transformer-remark`,
       options: {
@@ -76,6 +77,6 @@ module.exports = {
     // },
     'gatsby-plugin-offline',
     `gatsby-plugin-sass`,
-    // 'gatsby-transformer-remark'
+    
   ],
 }

@@ -15,17 +15,21 @@ class Posts extends React.Component{
                 // const title = node.frontmatter.title || node.fields.slug
                 return(
                   // <div className="blog-list"></div>
-                    <article className="article" key={node.fields.slug}>
-                        <h3 className="article-title">
-                            <Link to={node.fields.slug}>
-                                {node.frontmatter.title}
-                            </Link>
-                        </h3>
-                        <Img sizes={node.frontmatter.featuredImage.childImageSharp.sizes} />
-                        <small className="article-date">{node.frontmatter.date}</small>    
-                        <p className="article-description" dangerouslySetInnerHTML={{__html: node.frontmatter.description || node.excerpt,}}></p>
-                                                
-                    </article>                  
+                  <article className="article" key={node.fields.slug}>
+                  <div className="featured-image">
+                  <Img sizes={node.frontmatter.featuredImage.childImageSharp.sizes} />
+                  </div>
+
+                  <div className="article-content">
+                    <h3 className="article-title">
+                        <Link to={node.fields.slug}>
+                            {node.frontmatter.title}
+                        </Link>
+                    </h3>
+                    <small className="article-date">{node.frontmatter.date}</small>    
+                    <p className="article-description" dangerouslySetInnerHTML={{__html: node.frontmatter.description || node.excerpt,}}></p>
+                  </div>                       
+              </article>    
                 )
             })}
         </Layout>
@@ -45,7 +49,7 @@ query {
     allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
       edges {
         node {
-          excerpt(pruneLength: 20)
+          excerpt(pruneLength: 30)
           fields {
             slug
           }

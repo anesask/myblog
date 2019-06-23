@@ -1,12 +1,15 @@
-.article{
-    border-bottom: 1px solid black;
-    // border-radius: 5px;
-    position: relative;
+.article{      
     display: flex;
-    flex-direction: column;
-    margin-bottom: 30px;
+    flex-direction: row;
+    margin: 1rem auto;
+    margin-bottom: 2.5%;
+    line-height: 1.4;
+    box-shadow: 0 3px 7px -1px rgba(#000, .1);
     transition: all 0.1s ease;
-    // background-color: hsla(360, 50%, 90%, 0.77);
+    border-radius: .2rem;
+    background-color: hsla(360, 50%, 90%, 0.17);
+    overflow: hidden;
+    // height: 6rem;
 
     &:first-child{
         margin-top: 2rem;
@@ -17,31 +20,52 @@
         transition: all 0.2s ease;
     }
 
-    & a{
+    & a{        
         text-decoration: none;
         text-transform: capitalize;
-        font-size: 24px;
+        font-size: 1.5rem;
         font-weight: 500;
         color: $primary-color;
     }
 
-    & .article-title{
+    & .article-title{        
         font-size: 1.5rem;
-        margin-bottom: 8px;
+        margin: 4px 0 0px 1rem;
     }
 
     & .article-link{
         text-decoration: none;
     }
 
-    & p{
+    & p{        
         font-size: 18px;
-        margin-bottom: -0px;
+        margin: 0 0 8px 1rem;
     }
 
     & .article-date{
+        margin: 0 0 8px 1rem;        
         text-rendering: auto;
         font-weight: bold;
         text-decoration: black;
+    }
+
+    .featured-image{
+        float: left;
+        width: 15%;
+        height: 100%;
+        z-index: -10;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    .article{
+        margin: 1rem auto;
+    }
+    .featured-image{
+        display: none;
+    }    
+
+    .article-title a{        
+        font-size: 1.2rem;        
     }
 }

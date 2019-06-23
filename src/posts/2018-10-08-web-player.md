@@ -1,6 +1,7 @@
 ---
 title: "Web Music Player - HTML/CSS/JS"
 date: "2018-10-08"
+featuredImage: "./myimage.jpg"
 ---
 
 Here is short preview on a small project I'm working on.

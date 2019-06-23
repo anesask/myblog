@@ -1,6 +1,7 @@
 ---
 title: "Distance Calculator - Google Maps Distance Matrix API"
 date: "2018-04-08"
+featuredImage: "./myimage.jpg"
 ---
 
 Google Maps Distance Calculator
