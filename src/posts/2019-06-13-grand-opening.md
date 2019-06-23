@@ -1,7 +1,7 @@
 ---
 title: "Grand Opening..."
 date: "2017-06-13"
-featuredImage: "./myimage.jpg"
+featuredImage: "./post_images/grandopening.jpg"
 ---
 
 Hello friends and strangers,
