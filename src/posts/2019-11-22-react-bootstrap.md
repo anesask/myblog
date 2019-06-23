@@ -1,7 +1,7 @@
 ---
 title: "How to Setup React and Bootstrap 4"
 date: "2018-11-22"
-featuredImage: "./post_images/grandopening.jpg"
+featuredImage: "./post_images/react_bootstrap.jpg"
 ---
 
 This video is my first tutorial where I will show how to setup ReactJs and Bootstrap 4, there is few ways, but I think this is the easiest.
