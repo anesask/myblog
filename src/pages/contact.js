@@ -1,5 +1,6 @@
 import React from 'react'
 // import { Link } from 'gatsby'
+import { IoLogoFacebook, IoLogoInstagram, IoLogoLinkedin } from "react-icons/io";
 
 import Layout from '../components/layout'
 
@@ -27,7 +28,21 @@ const Contact = () => (
         <div data-netlify-recaptcha />
         <input type="submit" value="Send Message" className="send-button"/>            
       </form>
+
+      <div className="social-wrapper">
+        <a href="https://www.facebook.com/anes.mulalic" target="_blank" rel="noopener" className="social-icon">
+          <IoLogoFacebook/>
+        </a>
+        <a href="https://www.linkedin.com/in/anesmulalic/" target="_blank" rel="noopener" className="social-icon">
+          <IoLogoLinkedin/>
+        </a> 
+        <a href="https://www.instagram.com/anes_mulalic/?hl=en" target="_blank" rel="noopener" className="social-icon">
+          <IoLogoInstagram/>
+        </a>                      
+      </div>
     </div>
+
+    
   </Layout>
 )
 

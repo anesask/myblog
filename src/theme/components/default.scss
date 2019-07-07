@@ -47,3 +47,18 @@
     height: 100%;
     border: 0;
 }
+
+// Social Network Icons
+
+.social-wrapper{
+    margin: 0 auto;
+
+    & .social-icon{
+        color: inherit;
+        font-size: 2.5rem;
+        margin-left: .3rem;
+        &:hover{
+            color: #c52e37;
+        }
+    }
+}
