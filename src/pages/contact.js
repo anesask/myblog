@@ -1,6 +1,6 @@
 import React from 'react'
 // import { Link } from 'gatsby'
-import { IoLogoFacebook, IoLogoInstagram, IoLogoLinkedin } from "react-icons/io";
+import { IoLogoFacebook, IoLogoInstagram, IoLogoLinkedin, IoLogoYoutube, IoLogoGithub } from "react-icons/io";
 
 import Layout from '../components/layout'
 
@@ -30,15 +30,23 @@ const Contact = () => (
       </form>
 
       <div className="social-wrapper">
-        <a href="https://www.facebook.com/anes.mulalic" target="_blank" rel="noopener" className="social-icon">
+        <a href="https://www.facebook.com/anes.mulalic" target="_blank" rel="noopener noreferrer" className="social-icon">
           <IoLogoFacebook/>
         </a>
-        <a href="https://www.linkedin.com/in/anesmulalic/" target="_blank" rel="noopener" className="social-icon">
+        <a href="https://www.linkedin.com/in/anesmulalic/" target="_blank" rel="noopener noreferrer" className="social-icon">
           <IoLogoLinkedin/>
         </a> 
-        <a href="https://www.instagram.com/anes_mulalic/?hl=en" target="_blank" rel="noopener" className="social-icon">
+        <a href="https://www.youtube.com/channel/UCjRZZb1xR4jtKmRljq4d3JQ/videos" target="_blank" rel="noopener noreferrer" className="social-icon">
+          <IoLogoYoutube/>
+        </a>
+        <a href="https://github.com/anesask" target="_blank" rel="noopener noreferrer" className="social-icon">
+          <IoLogoGithub/>
+        </a>
+        <a href="https://www.instagram.com/anes_mulalic/?hl=en" target="_blank" rel="noopener noreferrer" className="social-icon">
           <IoLogoInstagram/>
-        </a>                      
+        </a>
+        
+
       </div>
     </div>
 

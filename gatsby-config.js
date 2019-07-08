@@ -1,3 +1,5 @@
+const config = require('./site-config')
+
 module.exports = {
   siteMetadata: {
     title: 'Anes Mulalic | Web Development',
@@ -58,6 +60,12 @@ module.exports = {
         google: {
           families: ['Lato', 'Raleway']
         }
+      }
+    },
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: config.googleAnalyticsID
       }
     },  
       
