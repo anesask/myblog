@@ -22,7 +22,7 @@ const IndexPage = () => (
           fontSize: "14px"
         }}
 
-      debug={true}
+      // debug={true}
       >
         
           This website uses cookies to enhance the user experience. If you decline, your information won’t be tracked when you visit this website.
