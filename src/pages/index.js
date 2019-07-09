@@ -15,7 +15,7 @@ const IndexPage = () => (
       <CookieConsent 
         enableDeclineButton
         onDecline={() => <a href="javascript:gaOptout()">Decline</a>}
-
+  	    hideOnAccept
         style={{ 
           background: "#282829",
           height: '7%',

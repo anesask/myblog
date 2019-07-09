@@ -21,10 +21,10 @@ const Contact = () => (
 
         <input hidden name="bot-field" />
         <input type="hidden" name="form-name" value="contact" />
-        <input type="text" name="name" id="name" placeholder="Name" />
-        <input type="text" name="email" id="email" placeholder="Email"/>
-        <input type="text" name="subject" id="subject" placeholder="Subject" />
-        <textarea name="message" id="message" placeholder="Write your message..."/>
+        <input type="text" name="name" id="name" placeholder="Name"  required/>
+        <input type="text" name="email" id="email" placeholder="Email" required/>
+        <input type="text" name="subject" id="subject" placeholder="Subject"  required/>
+        <textarea name="message" id="message" placeholder="Write your message..." required/>
         <div data-netlify-recaptcha />
         <input type="submit" value="Send Message" className="send-button"/>            
       </form>
