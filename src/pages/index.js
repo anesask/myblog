@@ -10,24 +10,22 @@ const IndexPage = () => (
       <Layout>  
         <div className="fronttext-img"><img src={Fronttext} alt="I'm Anes"/>
             <h1>Human being & Web Developer</h1>
-        </div>
+        </div>        
       </Layout>
-      <CookieConsent 
-        enableDeclineButton
-        onDecline={() => <a href="javascript:gaOptout()">Decline</a>}
-  	    hideOnAccept
-        style={{ 
-          background: "#282829",
-          height: '7%',
-          fontSize: "14px"
-        }}
-
-      // debug={true}
-      >
+      <CookieConsent
+            enableDeclineButton
+            onDecline={() => <a href="javascript:gaOptout()">Decline</a>}
+            hideOnAccept
+            disableStyles={true}
+            containerClasses="cookie-container"
+            contentClasses="cookie-content"              
+            buttonClasses="cookie-button-accept"
+            declineButtonClasses="cookie-button-decline"
+            >
         
           This website uses cookies to enhance the user experience. If you decline, your information won’t be tracked when you visit this website.
-          To find out more about the cookies are used, see Privacy Policy.
-      </CookieConsent>
+          To find out more about the cookies are used, see <a href="/privacypolicy">Privacy Policy</a> and <a href="/termsofservice">Terms Of Service</a>.
+      </CookieConsent>      
     </div>
   
 
