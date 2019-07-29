@@ -6,6 +6,27 @@ module.exports = {
     author: 'Anes Mulalic'
   },
   plugins: [
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `src`,
+        path: `${__dirname}/src/`
+      }
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,        
+        path: `${__dirname}/src/images/`        
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {        
+        path: `${__dirname}/src/posts/`,
+        name: `posts`
+      },
+    },
     `gatsby-transformer-remark`,
     {
       resolve: `gatsby-transformer-remark`,
@@ -32,28 +53,7 @@ module.exports = {
     },
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,     
-    `gatsby-image`, 
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `src`,
-        path: `${__dirname}/src/`
-      }
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `images`,        
-        path: `${__dirname}/src/images/`        
-      },
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {        
-        path: `${__dirname}/src/posts/`,
-        name: `posts`
-      },
-    },
+    `gatsby-image`,     
     {
       resolve: `gatsby-plugin-web-font-loader`,
       options: {
