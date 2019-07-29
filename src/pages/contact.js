@@ -1,6 +1,6 @@
 import React from 'react'
 // import { Link } from 'gatsby'
-import { IoLogoFacebook, IoLogoInstagram, IoLogoLinkedin, IoLogoYoutube, IoLogoGithub } from "react-icons/io";
+import { IoLogoFacebook, IoLogoInstagram, IoLogoLinkedin, IoLogoYoutube, IoLogoGithub, IoLogoXing } from "react-icons/io";
 
 import Layout from '../components/layout'
 
@@ -36,7 +36,10 @@ const Contact = () => (
         </a>
         <a href="https://www.linkedin.com/in/anesmulalic/" target="_blank" rel="noopener noreferrer" className="social-icon">
           <IoLogoLinkedin/>
-        </a> 
+        </a>
+        <a href="https://www.xing.com/profile/Anes_Mulalic?sc_o=mxb_p" target="_blank" rel="noopener noreferrer" className="social-icon">
+          <IoLogoXing/>
+        </a>  
         <a href="https://www.youtube.com/channel/UCjRZZb1xR4jtKmRljq4d3JQ/videos" target="_blank" rel="noopener noreferrer" className="social-icon">
           <IoLogoYoutube/>
         </a>
